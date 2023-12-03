@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/css/contacto.css">
+<link rel="stylesheet" href="/static/css/home.css">
+<title>Contacto</title>
+
+</head>
+  
+<body>
+  <header>
+    <div class="container-hero">
+      <div class="container hero">
+        <div class="customer-support">
+          <i class="fa-solid fa-headset"></i>
+          <div class="content-customer-support">
+            <span class="text">Soporte al cliente</span>
+            <span class="number">9191409310</span>
+          </div>
+        </div>
+
+        <div class="container-logo">
+          
+          <h1 class="logo"><a href="/">Sport Siglo XXI</a></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-navbar">
+      <nav class="navbar container">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="menu">
+          <li><a href="/home">Inicio</a></li>
+          <li><a href="/producto">Productos</a></li>
+          <li><a href="/contacto">Contactanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <br>
+  <br>
+
+<div class="contact-container">
+  <div class="info">
+    <img src="/static/img/logos/logo50.png" alt="logotipo">
+    <h2>Sport Siglo XXI</h2>
+    <p>En Sport Siglo XXI, nuestra filosofía organizacional se fundamenta en la pasión por el deporte y el compromiso con la excelencia. Creemos en la importancia de fomentar un estilo de vida activo y saludable, y nos esforzamos por ser más que una tienda; aspiramos a ser un compañero confiable en el viaje de nuestros clientes hacia el bienestar y el rendimiento óptimo.</p>
+  </div>
+  <form class="contact-form" action="/regis" method="post">
+    <h2>Contáctenos</h2>
+    <p>
+        <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre" maxlength="50" pattern="[a-zA-Z ]+" title="Ingresa un nombre valido incluyendo solo letras" autocomplete="off" required>
+    </p>
+    <p>
+        <input type="email" name="correo" id="correo" required="obligatorio" placeholder="Escribe tu correo" maxlength="50" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Agrega un correo electronico valido" autocomplete="off" required>
+    </p>
+    <p>
+        <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono" pattern="[0-9]{10}" minlength="10" maxlength="10" pattern="[0-9]{10}" title="Ingrese un numero de telefono valido y los 10 dígitos" autocomplete="off" required>
+
+    </p>
+    <p>
+        <input type="text" name="asunto" id="asunto" required="obligatorio" placeholder="Escribe un asunto" maxlength="35" pattern="[a-zA-ZñÑ ]+" title="Incluye solamente un pequeño asunto y solo letras" autocomplete="off">
+    </p>
+    <p>
+      <textarea name="mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..." maxlength="100" pattern="[a-zA-Z0-9]+" autocomplete="off" oninput="filtrarCaracteres()"></textarea>
+  </p>
+    <p>
+    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                <p class="aviso"> 
+     </p>
+  </form>
+</div>
+<br>
+
+<footer class="footer">
+  <div class="container container-footer">
+    <div class="menu-footer">
+      <div class="contact-info">
+        <p class="title-footer">Información de Contacto</p>
+        <ul>
+          <li>
+            Dirección:  Primera Calle S/N, Guadalupe Pashila, Ocosingo, Chiapas, México
+          </li>
+          <li>Teléfono: +52 919-140-93-10</li>
+          <li>EmaiL: sports_siglo21@gmail.com</li>
+        </ul>
+        <div class="social-icons">
+          <span class="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </span>
+          <span class="twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </span>
+          <span class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </span>
+          <span class="pinterest">
+            <i class="fa-brands fa-pinterest-p"></i>
+          </span>
+          <span class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="information">
+        <p class="title-footer">Información</p>
+        <ul>
+          <li><a href="#">Acerca de Nosotros</a></li>
+          <li><a href="#">Politicas de Privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="/contacto">Contactános</a></li>
+        </ul>
+      </div>
+
+      <div class="my-account">
+        <p class="title-footer">Mi cuenta</p>
+
+        <ul>
+          <li><a href="#">Mi cuenta</a></li>
+          <li><a href='/contacto'>Información Adicional</a></li>
+          <li><a href="/contacto">Reembolsos</a></li>
+        </ul>
+      </div>
+
+      <div class="newsletter">
+        <p class="title-footer">Boletín informativo</p>
+
+        <div class="content">
+          <p>
+            Suscríbete a nuestros boletines ahora y mantente al
+            día con nuevas colecciones y ofertas exclusivas.
+          </p>
+          <input type="email" placeholder="Ingresa el correo aquí...">
+          <button>Suscríbete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>
+        Desarrollado por Sport Siglo XXI
+      </p>
+
+      <img src="/static/img/payment.png" alt="Pagos">
+    </div>
+  </div>
+</footer>
+
+
+</body>
+<script
+src="https://kit.fontawesome.com/81581fb069.js"
+crossorigin="anonymous"
+></script>
+<script src="/static/js/text.js"></script>
+</html>

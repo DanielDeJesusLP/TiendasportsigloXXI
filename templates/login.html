@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stilor.css')}}"/>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="login-box">
+            <div class="login-header">
+                <header>Inicio de Sesión</header>
+            </div>
+
+            <form action="/sesion/iniciar" method="POST">
+                
+                <div class="input-box">
+                    <input type="email" class="input-field" id="email" name="email" placeholder="Correo Electrónico" title="Ingrese un correo valido" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" id="password" name="password" placeholder="Contraseña" title="Ingrese na Contraseña valida" autocomplete="off" required>
+                </div>
+
+                <div class="input-submit">
+                    <button class="submit-btn" type="submit"><h3 style="color: aliceblue;">Ingresar</h3></button>
+                </div>
+                
+
+                <div class="sign-up-link">
+                    <p>¿No tienes una cuenta? <a href='/registro'>Regístrate aquí</a></p>
+                </div>
+                <br>
+                <center>
+                    <a href='/aviso' style="color: white;">Aviso de Privacidad</a></p>
+                </center>
+            </form>    
+        </div>
+        
+    </div>
+     
+</body>
+</html>

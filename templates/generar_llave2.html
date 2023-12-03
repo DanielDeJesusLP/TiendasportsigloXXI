@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Mensajes Clientes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href='/generar_llave2'>Inicio</a></li>
+            <li><a href='/generar_llave'>Generar LLave</a></li>
+            <li><a href='/datos'>Lista de Mensajes Clientes</a></li>
+            <li><a href='/datosencri'> Verificar seguridad de mensajes </a></li>
+            <li><a href='{{ url_for('main.login') }}'>Cerrar Sesión</a></li>
+        </ul>
+    </div>
+    <h1>Bienvenido querido Gerente</h1>
+    <h2>LLave publica para cifrado - Activa</h2>
+    <h2>LLave privada - Activa</h2>
+    
+    <h2>Sistema activado</h2>
+
+
+    
+</body>
+
+</html>

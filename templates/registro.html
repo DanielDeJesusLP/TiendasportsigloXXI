@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stilor.css')}}"/>
+</head>
+
+<body>
+    <div class="box">
+        <div class="login-box">
+            <div class="login-header">
+                <header>Registrarse</header>
+            </div>
+
+            <form action="/registrarme" method="POST">
+                <div class="input-box">
+                    <input type="text" class="input-field" id="name" name="name" placeholder="Nombre" maxlength="50" pattern="[a-zA-Z ]+" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="username" name="username" placeholder="Nombre de usuario" maxlength="15" pattern="[a-zA-Z0-9 ]+" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="number" name="number" placeholder="Número" minlength="10" maxlength="10" pattern="[0-9]{10}" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" class="input-field" id="email" name="email" placeholder="Correo" maxlength="50" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" id="password" name="password" placeholder="Contraseña" minlength="6" maxlength="10" autocomplete="off" required>
+                </div>
+                <div class="input-submit">
+                    <button class="submit-btn" id="submit"><h3 style="color: aliceblue;">Registrarme</h3></button>
+                </div>
+                
+                <div class="sign-up-link">
+                    <p>¿Ya tienes cuenta? <a href="/login" >Inicia sesion</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

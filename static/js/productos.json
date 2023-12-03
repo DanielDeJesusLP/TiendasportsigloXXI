@@ -1,0 +1,182 @@
+[
+    {
+        "id": "abrigo-01",
+        "titulo": "Balon Soccer Voit No.5",
+        "imagen": "/static/img/abrigos/balon1.png",
+        "categoria": {
+            "nombre": "Balones",
+            "id": "Balones"
+        },
+        "precio": 1799
+    },
+    {
+        "id": "abrigo-02",
+        "titulo": "WILSON NBA DRV Series",
+        "imagen": "/static/img/abrigos/balon2.png",
+        "categoria": {
+            "nombre": "Balones",
+            "id": "Balones"
+        },
+        "precio": 1500
+    },
+    {
+        "id": "abrigo-03",
+        "titulo": "Molten Baloncesto",
+        "imagen": "/static/img/abrigos/balon3.png",
+        "categoria": {
+            "nombre": "Balones",
+            "id": "Balones"
+        },
+        "precio": 1089
+    },
+    {
+        "id": "abrigo-04",
+        "titulo": "Juventus FC",
+        "imagen": "/static/img/abrigos/balon4.png",
+        "categoria": {
+            "nombre": "Balones",
+            "id": "Balones"
+        },
+        "precio": 380
+    },
+    {
+        "id": "abrigo-05",
+        "titulo": "Molten luz",
+        "imagen": "/static/img/abrigos/balon5.png",
+        "categoria": {
+            "nombre": "Balones",
+            "id": "Balones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-01",
+        "titulo": "Camiseta 01",
+        "imagen": "/static/img/camisetas/01.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-02",
+        "titulo": "Camiseta 02",
+        "imagen": "/static/img/camisetas/02.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-03",
+        "titulo": "Camiseta 03",
+        "imagen": "/static/img/camisetas/03.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-04",
+        "titulo": "Camiseta 04",
+        "imagen": "/static/img/camisetas/04.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-05",
+        "titulo": "Camiseta 05",
+        "imagen": "/static/img/camisetas/05.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-06",
+        "titulo": "Camiseta 06",
+        "imagen": "/static/img/camisetas/06.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-07",
+        "titulo": "Camiseta 07",
+        "imagen": "/static/img/camisetas/07.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-08",
+        "titulo": "Camiseta 08",
+        "imagen": "/static/img/camisetas/08.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Charged Assert 9 Black",
+        "imagen": "/static/img/pantalones/tenis1.png",
+        "categoria": {
+            "nombre": "Calzados",
+            "id": "Calzados"
+        },
+        "precio": 1019
+    },
+    {
+        "id": "pantalon-02",
+        "titulo": "PUMA Tenis para Caballero",
+        "imagen": "/static/img/pantalones/tenis2.png",
+        "categoria": {
+            "nombre": "Calzados",
+            "id": "Calzados"
+        },
+        "precio": 1259
+    },
+    {
+        "id": "pantalon-03",
+        "titulo": "Adidas Negro RUNFALCON 3",
+        "imagen": "/static/img/pantalones/tenis3.png",
+        "categoria": {
+            "nombre": "Calzados",
+            "id": "Calzados"
+        },
+        "precio": 1599
+    },
+    {
+        "id": "pantalon-04",
+        "titulo": "Nike Baloncesto",
+        "imagen": "/static/img/pantalones/tenis4.png",
+        "categoria": {
+            "nombre": "Calzados",
+            "id": "Calzados"
+        },
+        "precio": 3593
+    },
+    {
+        "id": "pantalon-05",
+        "titulo": "Vans vn-0zdf1wx Zapato ",
+        "imagen": "/static/img/pantalones/tenis5.png",
+        "categoria": {
+            "nombre": "Calzados",
+            "id": "Calzados"
+        },
+        "precio": 2235
+    }
+]

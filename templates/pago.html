@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Pago</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/static/css/pagos.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+          <div class="container hero">
+            <div class="customer-support">
+              <i class="fa-solid fa-headset"></i>
+              <div class="content-customer-support">
+                <span class="text">Soporte al cliente</span>
+                <span class="number">9191409310</span>
+              </div>
+            </div>
+    
+            <div class="container-logo">
+              
+              <h1 class="logo"><a href="/">Sport Siglo XXI</a></h1>
+            </div>
+          </div>
+        </div>
+    
+        <div class="container-navbar">
+          <nav class="navbar container">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="menu">
+              <li><a href="/home">Inicio</a></li>
+              <li><a href="/producto">Productos</a></li>
+              <li><a href="/contacto">Contactanos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <br>
+      <br>
+
+	<div class="contenedor">
+
+
+		<!-- Tarjeta -->
+		<section class="tarjeta" id="tarjeta">
+			<div class="delantera">
+				<div class="logo-marca" id="logo-marca">
+					<!-- <img src="img/logos/visa.png" alt=""> -->
+				</div>
+				<img src="/static/img/bg-tarjeta/chip-tarjeta.png" class="chip" alt="">
+				<div class="datos">
+					<div class="grupo" id="numero">
+						<p class="label">Número Tarjeta</p>
+						<p class="numero">#### #### #### ####</p>
+					</div>
+					<div class="flexbox">
+						<div class="grupo" id="nombre">
+							<p class="label">Nombre Tarjeta</p>
+							<p class="nombre">Jhon Doe</p>
+						</div>
+
+						<div class="grupo" id="expiracion">
+							<p class="label">Expiracion</p>
+							<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="trasera">
+				<div class="barra-magnetica"></div>
+				<div class="datos">
+					<div class="grupo" id="firma">
+						<p class="label">Firma</p>
+						<div class="firma"><p></p></div>
+					</div>
+					<div class="grupo" id="ccv">
+						<p class="label">CCV</p>
+						<p class="ccv"></p>
+					</div>
+				</div>
+				<p class="leyenda">No compartir el numero de targeta</p>
+				<a href="#" class="link-banco">www.sportXXI.com</a>
+			</div>
+		</section>
+
+		<!-- Contenedor Boton Abrir Formulario -->
+		<div class="contenedor-btn">
+			<button class="btn-abrir-formulario" id="btn-abrir-formulario">
+				<i class="fas fa-plus"></i>
+			</button>
+		</div>
+
+		<!-- Formulario -->
+		<form action="/pagos" id="formulario-tarjeta" class="formulario-tarjeta" method="post">
+			<div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre Completo" maxlength="50" pattern="[a-zA-Z ]+" autocomplete="off" required>
+    </div>
+
+    <div class="form-group">
+        <label for="numero">Número de Tarjeta:</label>
+        <input type="password" class="form-control" id="numero" name="numero" placeholder="Número de tarjeta" minlength="16" maxlength="16" pattern="[0-9]{16}" title="Ingrese solo números y los 16 dígitos" autocomplete="off" required">
+    </div>
+    
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="fecha">Fecha de vencimiento:</label>
+            <input type="password" class="form-control" id="fecha" name="fecha" placeholder="MM/YY" minlength="4" maxlength="4" pattern="[0-9]{4}" title="Ingrese solo números y los 4 digitos" autocomplete="off" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="cvv">CVV:</label>
+            <input type="password" class="form-control" id="cvv" name="cvv" placeholder="123" minlength="3" maxlength="3" pattern="[0-9]{3}" title="Ingrese solo números y los 3 digitos" autocomplete="off" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="banco">Banco:</label>
+        <select class="form-control" id="banco" name="banco" required>
+            <option value="" disabled selected>Seleccione su banco</option>
+            <option value="BBVA Bancomer">BBVA Bancomer</option>
+            <option value="Banco Azteca">Azteca</option>
+            <option value="Banco Santander">Santander</option>
+        </select>
+    </div>
+<br>
+    <button type="submit" class="btn-enviar">Enviar</button>
+		</form>
+	</div>
+    <footer class="footer">
+        <div class="container container-footer">
+          <div class="menu-footer">
+            <div class="contact-info">
+              <p class="title-footer">Información de Contacto</p>
+              <ul>
+                <li>
+                  Dirección:  Primera Calle S/N, Guadalupe Pashila, Ocosingo, Chiapas, México
+                </li>
+                <li>Teléfono: +52 919-140-93-10</li>
+                <li>EmaiL: sports_siglo21@gmail.com</li>
+              </ul>
+              <div class="social-icons">
+                <span class="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </span>
+                <span class="twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </span>
+                <span class="youtube">
+                  <i class="fa-brands fa-youtube"></i>
+                </span>
+                <span class="pinterest">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </span>
+                <span class="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+              </div>
+            </div>
+      
+            <div class="information">
+              <p class="title-footer">Información</p>
+              <ul>
+                <li><a href="#">Acerca de Nosotros</a></li>
+                <li><a href="#">Politicas de Privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="/contacto">Contactános</a></li>
+              </ul>
+            </div>
+      
+            <div class="my-account">
+              <p class="title-footer">Mi cuenta</p>
+      
+              <ul>
+                <li><a href="#">Mi cuenta</a></li>
+                <li><a href='/contacto'>Información Adicional</a></li>
+                <li><a href="/contacto">Reembolsos</a></li>
+              </ul>
+            </div>
+      
+            <div class="newsletter">
+              <p class="title-footer">Boletín informativo</p>
+      
+              <div class="content">
+                <p>
+                  Suscríbete a nuestros boletines ahora y mantente al
+                  día con nuevas colecciones y ofertas exclusivas.
+                </p>
+                <input type="email" placeholder="Ingresa el correo aquí...">
+                <button>Suscríbete</button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="copyright">
+            <p>
+              Desarrollado por Sport Siglo XXI
+            </p>
+      
+            <img src="/static/img/payment.png" alt="Pagos">
+          </div>
+        </div>
+      </footer>
+      
+      <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+      ></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="/static/js/pagos.js"></script>
+</body>
+</html>
+
+
