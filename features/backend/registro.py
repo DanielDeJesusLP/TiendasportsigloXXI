@@ -11,13 +11,7 @@ import base64
 
 
 config = {
-    "apiKey": "AIzaSyCYTonsY61ldDvZSb3FpeLZxMwUjsT84H4",
-    "authDomain": "bancodanifo.firebaseapp.com",
-    "databaseURL": "https://bancodanifo-default-rtdb.firebaseio.com",
-    "projectId": "bancodanifo",
-    "storageBucket": "bancodanifo.appspot.com",
-    "messagingSenderId": "304043770972",
-    "appId": "1:304043770972:web:eed42218b5b73a17291299"
+
 }
 
 app = Blueprint('registro', __name__, url_prefix='/')
